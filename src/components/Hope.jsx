@@ -43,7 +43,7 @@ const Hope = () => {
     if (angka < harapan.length) setTxt((txt) => (txt += harapan[angka]));
     // txt = txt + harapan[angka];
     if (angka != harapan.length - 1) setTxt((txt) => (txt += " "));
-    if (angka >= harapan.length) txt += "";
+    if (angka >= harapan.length) setTxt((txt) => (txt += ""));
   };
   return (
     <>

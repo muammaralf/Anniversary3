@@ -1,16 +1,16 @@
 {
+  "homepage": "https://muammaralf.github.io/Anniversary3/",
   "name": "th3_anniversary",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://muammaralf.github.io/Anniversary3/",
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d deploy",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
